@@ -1,0 +1,403 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #444;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #007bff;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 86, 179, 0.7), rgba(0, 56, 179, 0.7));
+  z-index: 0;
+}
+
+header>* {
+  position: relative;
+  z-index: 1;
+}
+
+header .headline {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+header .presentation-text {
+  font-size: 1.2em;
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+.cta,
+.contato button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.cta:hover,
+.contato button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.sobre-nos .historias-sucesso {
+  margin-top: 30px;
+}
+
+.sobre-nos .depoimento {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #28a745;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sobre-nos .prova-social {
+  font-size: 1.1em;
+  color: #555;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+p,
+label,
+li,
+cite {
+  color: #555;
+}
+
+.blog article {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.blog article:last-child {
+  border-bottom: none;
+}
+
+.blog h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.blog .compartilhamento-social {
+  margin-top: 20px;
+}
+
+.servicos .servico {
+  margin-bottom: 30px;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.servicos h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.servicos .cta-servico {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.servicos .cta-servico:hover {
+  background-color: #e0a800;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.contato input,
+.contato textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contato .informacoes-contato {
+  margin-top: 30px;
+  color: #555;
+}
+
+.contato .redes-sociais {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer nav ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+  color: #ddd;
+}
+
+footer .citacao {
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.tech-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a barra de rolagem */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .logo {
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  header .headline {
+    font-size: 2em;
+  }
+
+  header .presentation-text {
+    font-size: 1em;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 1.7em;
+  }
+
+  .contato input,
+  .contato textarea {
+    font-size: 14px;
+  }
+
+  .contato button {
+    font-size: 1em;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+body {
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+}
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+/* Button styles */
+.cta,
+.contato button,
+.servicos .cta-servico {
+  transition: all 0.3s ease;
+}
+
+.cta:hover,
+.contato button:hover,
+.servicos .cta-servico:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.banner {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
